@@ -1,14 +1,8 @@
 \documentclass[11pt,a4paper]{article}
 \usepackage[landscape,textwidth=210mm,textheight=297.02mm]{geometry}
-\usepackage{xcolor}
-\usepackage{mathtools}
-\pagestyle{empty}
-\usepackage{graphicx} 
-\usepackage{latexsym}
 \usepackage{tikz}
 \usepackage{ifthen}
 
-\pagestyle{empty}
 \renewcommand{\familydefault}{\sfdefault}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% CHANGE NAME INFO AND ADDRESS HERE:
@@ -28,7 +22,6 @@ Planification du Movement et Robotique Humanoide}
 \newcommand{\namesize}{0.7cm}
 \newcommand{\addresssize}{0.36cm}
 \newcommand{\infosize}{0.4cm}
-
 \newcommand{\scardwidth}{90mm}
 \newcommand{\scardheight}{56mm}
 
@@ -64,9 +57,6 @@ Planification du Movement et Robotique Humanoide}
 %% SINGLE VISIT CARD DESIGN
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\tikzset{
-master/.style={ inner xsep=10pt, outer xsep=5pt, inner sep=0pt,outer sep=0pt}
-}
 \newcommand{\singlecardfrancaise}{
    \singlecard{2}
 }
@@ -75,13 +65,17 @@ master/.style={ inner xsep=10pt, outer xsep=5pt, inner sep=0pt,outer sep=0pt}
 }
 \newcommand{\singlecard}[1]{
 \begin{tikzpicture}[every node/.style={inner sep=0,outer sep=0}]
+  %card background
   \draw[color=white, fill=white] (0,0) rectangle (\scardwidth,\scardheight);
+  %NAME
   \node at (3,4.5) {
     {\fontsize{\namesize}{1em}\lmr\name}
   };
+  %LOGO (TOP RIGHT)
   \node at (7.4,4.5) {
         \imglaas
   };
+  %INFORMATION
   \node at (4.5,3.0) {
   \begin{minipage}{7cm}
     \fontsize{\infosize}{1em}\lmr
@@ -89,30 +83,34 @@ master/.style={ inner xsep=10pt, outer xsep=5pt, inner sep=0pt,outer sep=0pt}
     {\infoanglaise}{\infofrancaise}
   \end{minipage}
   };
+  %LOGO2 (BOTTOM LEFT)
   \node at (1.0,1.1) {
     \imgcnrs
   };
+  %LOGO3 (BOTTOM RIGHT)
   \node at (7.4,1.1) {
     \imgcarnot
   };
+  %ADDRESS BOTTOM
   \node at (4.0,1.1) {
   \begin{minipage}{4cm}
     \fontsize{\addresssize}{1em}\lmr
     \address
   \end{minipage}
   };
+  %LINE SEPARATING ADDRESS AND INFO
   \draw (0.3,2) -- (8.5,2);
 \end{tikzpicture}
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% DRAW CUT LINES
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{eso-pic}
 \usepackage{calc}
 
 \def\cutlinelength{10mm}
 \def\cutlinelengthvert{10mm}
-\def\cutlineoffset{-15mm}
 \newlength{\leftrule}
 \newlength{\rightrule}
 \setlength{\leftrule}{2\leftmargin-\marginparsep}
@@ -155,20 +153,10 @@ master/.style={ inner xsep=10pt, outer xsep=5pt, inner sep=0pt,outer sep=0pt}
 
 \begin{document}
 
-\newcommand{\cutline}[1]{
-  \raisebox{#1}{
-  \makebox[\cutlineoffset]{
-    \rule{\cutlinelength}{1pt}
-    }
-  }
-}
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PRINT 9 CARDS PER PAGE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \noindent
-%\makebox[\cutlineoffset]{
-%  \rule{1pt}{10mm}
-%  \rule{\cutlinelength}{1pt}
-%  \rule{1pt}{10mm}
-%}
 \\[-1pt]
 \singlecardanglaise
 \singlecardanglaise
@@ -198,9 +186,4 @@ master/.style={ inner xsep=10pt, outer xsep=5pt, inner sep=0pt,outer sep=0pt}
 \singlecardfrancaise
 \singlecardfrancaise
 \\[-1pt]
-
 \end{document}
-
-
-
-
