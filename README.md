@@ -6,4 +6,4 @@ visit cards per page, double-sided, so that two different languages can be used.
 
 Cut lines are created via put command and the eso-pic packages.
 
-![9cards](https://github.com/orthez/latex-visit-cards/blob/master/images/two_side_nine_cards.png)
+![9cards](https://raw.githubusercontent.com/orthez/latex-visit-cards/master/images/two_side_nine_cards.png)
