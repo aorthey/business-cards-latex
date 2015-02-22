@@ -16,4 +16,7 @@ Cut lines are created via put command and the eso-pic packages.
     cd latex-visit-cards
     pdflatex two_side_nine_cards.tex
 
+#### Example
+![Pdf Version of visitcards example (print-ready)](https://github.com/orthez/latex-visit-cards/raw/master/images/two_side_nine_cards.pdf)
 ![9cards](https://raw.githubusercontent.com/orthez/latex-visit-cards/master/images/two_side_nine_cards.png)
+
