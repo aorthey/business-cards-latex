@@ -5,7 +5,12 @@ A small latex template to create your own visitcard(s)/business cards. It is opt
 visit cards per page, double-sided, so that two different languages can be used.
 
 Cut lines are created via put command and the eso-pic packages. 
-Cloning/Building via
+
+#### Dependencies
+   * eso-pic latex package https://www.ctan.org/pkg/eso-pic
+   * tikz http://www.texample.net/tikz/
+ 
+#### Cloning/Building via
 
     git clone git@github.com:orthez/latex-visit-cards.git
     cd latex-visit-cards
