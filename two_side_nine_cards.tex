@@ -23,14 +23,22 @@
 %% CHANGE NAME INFO AND ADDRESS HERE:
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newcommand{\name}{Sanared Yehtro}
-\newcommand{\infoanglaise}{PhD Student\\ Machine Learning, Motion Planning 
+\newcommand{\infofront}{PhD Student\\ Machine Learning, Motion Planning 
 \\and Humanoid Robotics}
-\newcommand{\infofrancaise}{Doctorant\\ L'Apprentissage Automatique,
+\newcommand{\infoback}{Doctorant\\ Apprentissage Automatique,
 Planification du Movement et Robotique Humanoide}
 \newcommand{\mail}{yehtro@my-mail.fr}
 \newcommand{\url}{github.com}
 \newcommand{\phone}{+0033}
 \newcommand{\address}{LAAS-CNRS, Toulouse\\ \url \\ \mail \\ \phone}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% CHANGE IMAGES HERE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\imglaas}{\includegraphics[width=30mm]{images/logo_laas.pdf}}
+\newcommand{\imgcnrs}{\includegraphics[width=14mm]{images/logo_cnrs.pdf}}
+\newcommand{\imgcarnot}{\includegraphics[width=25mm]{images/logo_carnot.png}}
+\newcommand{\lmr}{\fontfamily{lmr}\selectfont}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% CHANGE SIZE OF TEXT AND INFO HERE:
@@ -62,21 +70,13 @@ Planification du Movement et Robotique Humanoide}
 \setlength{\paperheight}{210mm}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% TEXT | FONTS | SIZE OF TEXT | IMAGES
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\newcommand{\imglaas}{\includegraphics[width=30mm]{images/logo_laas.pdf}}
-\newcommand{\imgcnrs}{\includegraphics[width=14mm]{images/logo_cnrs.pdf}}
-\newcommand{\imgcarnot}{\includegraphics[width=25mm]{images/logo_carnot.png}}
-\newcommand{\lmr}{\fontfamily{lmr}\selectfont}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% SINGLE VISIT CARD DESIGN
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\newcommand{\singlecardfrancaise}{
+\newcommand{\singlecardback}{
    \singlecard{2}
 }
-\newcommand{\singlecardanglaise}{
+\newcommand{\singlecardfront}{
    \singlecard{1}
 }
 \newcommand{\singlecard}[1]{
@@ -96,7 +96,7 @@ Planification du Movement et Robotique Humanoide}
   \begin{minipage}{7cm}
     \fontsize{\infosize}{1em}\lmr
   \ifthenelse{\equal{#1}{1}}
-    {\infoanglaise}{\infofrancaise}
+    {\infofront}{\infoback}
   \end{minipage}
   };
   %LOGO2 (BOTTOM LEFT)
@@ -174,32 +174,32 @@ Planification du Movement et Robotique Humanoide}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \noindent
 \\[-1pt]
-\singlecardanglaise
-\singlecardanglaise
-\singlecardanglaise
+\singlecardfront
+\singlecardfront
+\singlecardfront
 \\[\verticaldist]
-\singlecardanglaise
-\singlecardanglaise
-\singlecardanglaise
+\singlecardfront
+\singlecardfront
+\singlecardfront
 \\[\verticaldist]          
-\singlecardanglaise
-\singlecardanglaise
-\singlecardanglaise
+\singlecardfront
+\singlecardfront
+\singlecardfront
 \\[-1pt]
 
 \newpage
 \noindent
 \\[-1pt]
-\singlecardfrancaise
-\singlecardfrancaise
-\singlecardfrancaise
+\singlecardback
+\singlecardback
+\singlecardback
 \\[\verticaldist]
-\singlecardfrancaise
-\singlecardfrancaise
-\singlecardfrancaise
+\singlecardback
+\singlecardback
+\singlecardback
 \\[\verticaldist]
-\singlecardfrancaise
-\singlecardfrancaise
-\singlecardfrancaise
+\singlecardback
+\singlecardback
+\singlecardback
 \\[-1pt]
 \end{document}
