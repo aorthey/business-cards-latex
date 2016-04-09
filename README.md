@@ -19,5 +19,5 @@ Cut lines are created via put command and the eso-pic packages.
 #### Example
 ![Pdf Version of business cards example (print-ready)](https://github.com/orthez/latex-visit-cards/raw/master/images/two_side_nine_cards.pdf)
 
-![9cards](https://raw.githubusercontent.com/orthez/latex-visit-cards/master/images/two_side_nine_cards_front.png)
+![9cards](https://raw.githubusercontent.com/orthez/latex-visit-cards/master/images/two_side_nine_cards_front.png =200x100)
 
