@@ -1,4 +1,4 @@
-latex-visit-cards
+business-cards-latex
 ====================
 
 A small latex template to create your own visitcard(s)/business cards. It is optimized for 9
@@ -12,12 +12,14 @@ Cut lines are created via put command and the eso-pic packages.
  
 #### Cloning/Building via
 
-    git clone git@github.com:orthez/latex-visit-cards.git
-    cd latex-visit-cards
+    git clone git@github.com:orthez/business-cards-latex.git
+    cd business-cards-latex
     pdflatex two_side_nine_cards.tex
 
 #### Example
-![Pdf Version of visitcards example (print-ready)](https://github.com/orthez/latex-visit-cards/raw/master/images/two_side_nine_cards.pdf)
+![Pdf Version of business cards example (print-ready)](https://github.com/orthez/latex-visit-cards/raw/master/images/two_side_nine_cards.pdf)
 
-![9cards](https://raw.githubusercontent.com/orthez/latex-visit-cards/master/images/two_side_nine_cards.png)
+| Front Side  | Back Side |
+| ------------- | ------------- |
+|<img src="https://raw.githubusercontent.com/orthez/latex-visit-cards/master/images/two_side_nine_cards_front.png" width="400">|<img src="https://raw.githubusercontent.com/orthez/latex-visit-cards/master/images/two_side_nine_cards_back.png" width="400">|
 
