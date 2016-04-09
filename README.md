@@ -12,8 +12,8 @@ Cut lines are created via put command and the eso-pic packages.
  
 #### Cloning/Building via
 
-    git clone git@github.com:orthez/latex-visit-cards.git
-    cd latex-visit-cards
+    git clone git@github.com:orthez/business-cards-latex.git
+    cd business-cards-latex
     pdflatex two_side_nine_cards.tex
 
 #### Example
