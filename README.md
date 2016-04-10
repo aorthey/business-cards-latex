@@ -17,9 +17,12 @@ Cut lines are created via put command and the eso-pic packages.
     pdflatex two_side_nine_cards.tex
 
 #### Example
-![Pdf Version of business cards example (print-ready)](https://github.com/orthez/latex-visit-cards/raw/master/images/two_side_nine_cards.pdf)
+Business Card, front side english, back side french. 
 
 | Front Side  | Back Side |
 | ------------- | ------------- |
 |<img src="https://raw.githubusercontent.com/orthez/latex-visit-cards/master/images/two_side_nine_cards_front.png" width="400">|<img src="https://raw.githubusercontent.com/orthez/latex-visit-cards/master/images/two_side_nine_cards_back.png" width="400">|
+
+![Pdf Version of business cards example (print-ready)](https://github.com/orthez/latex-visit-cards/raw/master/images/two_side_nine_cards.pdf)
+
 
