@@ -9,6 +9,8 @@ Cut lines are created via put command and the eso-pic packages.
 #### Dependencies
    * eso-pic latex package https://www.ctan.org/pkg/eso-pic
    * tikz http://www.texample.net/tikz/
+   
+    sudo apt-get install texlive-latex-recommended
  
 #### Cloning/Building via
 
